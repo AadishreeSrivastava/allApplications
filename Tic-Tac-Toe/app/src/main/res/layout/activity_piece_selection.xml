@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".piece_selection"
+    android:background="#373C9B">
+    
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+    
+    <ImageView
+        android:id="@+id/o"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/c"
+        android:layout_below="@+id/c"
+        android:src="@drawable/o"
+        android:layout_marginRight="30dp"/>
+
+    <ImageView
+        android:id="@+id/x"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/c"
+        android:layout_below="@+id/c"
+        android:src="@drawable/x"
+        android:layout_marginLeft="30dp"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_above="@+id/c"
+        android:text="Who plays first?"
+        android:textSize="45dp"
+        android:layout_marginBottom="60dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FF9800"/>
+
+
+
+</RelativeLayout>
